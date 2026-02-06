@@ -1,9 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Primera Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Tracker - Oscar</title>
+    <style>
+        :root { --f-yellow: #f8fb3c; --f-purple: #813df5; --f-dark: #121212; }
+        body { margin: 0; font-family: 'Burbank Big Condensed', 'Arial Black', sans-serif; background-color: var(--f-dark); color: white; }
+        nav { background: rgba(0,0,0,0.9); padding: 20px; text-align: center; border-bottom: 3px solid var(--f-yellow); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
+        nav a:hover { color: var(--f-yellow); }
+        .hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.5), var(--f-dark)), url('https://wallpaperaccess.com/full/11540.jpg'); background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        h1 { font-size: 4rem; text-shadow: 3px 3px var(--f-purple); margin-bottom: 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; }
+        .card { background: #1e1e1e; border: 2px solid var(--f-purple); border-radius: 15px; padding: 20px; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: var(--f-yellow); }
+        .rarity { display: inline-block; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; }
+        .legendary { background: #ffa500; color: black; }
+    </style>
 </head>
 <body>
-    <h1>¡Hola Mundo! Mi web en GitHub funciona.</h1>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="armas.html">Armas</a>
+    <a href="mapa.html">Mapa</a>
+</nav>
+
+<div class="hero">
+    <h1>TODO SOBRE FORTNITE</h1>
+    <p>Noticias, Filtraciones y Estadísticas de la Temporada</p>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <span class="rarity legendary">LEGENDARIO</span>
+        <h3>Nueva Temporada</h3>
+        <p>Descubre todos los cambios del mapa y las nuevas skins del pase de batalla.</p>
+        <a href="mapa.html" style="color:var(--f-yellow)">Ver el Mapa →</a>
+    </div>
+    <div class="card">
+        <span class="rarity" style="background: #b112ff;">ÉPICO</span>
+        <h3>Tier List de Armas</h3>
+        <p>¿Cuál es el mejor fusil de esta season? Analizamos el daño y la cadencia.</p>
+        <a href="armas.html" style="color:var(--f-yellow)">Ver Armas →</a>
+    </div>
+</div>
+
 </body>
 </html>
